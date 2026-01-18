@@ -42,7 +42,22 @@ Unlike standard chess apps that rely on libraries like python-chess for game log
 
 The project is structured to separate User Interface (UI) from Game Logic (Mechanics).
 
-```text   src/chess/  ├── main_window.py            # Application Entry Point  ├── ui_components/  │   ├── board.py              # Custom UI Widget for rendering the board  │   └── round_widget.py       # Turn indicator widget  └── mechanics/      ├── game.py               # Core Game Loop & Board State Manager      ├── piece.py              # Base Class for all pieces      └── pieces/               # Polymorphic Piece Implementations          ├── king.py          ├── queen.py          ├── rook.py          ├── bishop.py          ├── knight.py          └── pawn.py
+```text
+src/chess/
+├── main_window.py            # Application Entry Point
+├── ui_components/
+│   ├── board.py              # Custom UI Widget for rendering the board
+│   └── round_widget.py       # Turn indicator widget
+└── mechanics/
+    ├── game.py               # Core Game Loop & Board State Manager
+    ├── piece.py              # Base Class for all pieces
+    └── pieces/               # Polymorphic Piece Implementations
+        ├── king.py
+        ├── queen.py
+        ├── rook.py
+        ├── bishop.py
+        ├── knight.py
+        └── pawn.py
 ```
 
 ⚙️ How It Works (Under the Hood)
@@ -78,7 +93,7 @@ The application distinguishes between the **Visual Board** (UI) and the **Logica
 📸 Screenshots
 --------------
 
-_(You can add screenshots of your application here)_
+<img width="811" height="841" alt="image" src="https://github.com/user-attachments/assets/eeb19393-6a04-46f5-b6fe-973675e461c9" />
 
 🤝 Contribution
 ---------------
